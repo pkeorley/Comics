@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.34928.147
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Comics", "Comics\Comics.csproj", "{4345D59A-5BB2-4460-AF6D-52770DC20ECB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Comics.Tests", "Comics.Tests\Comics.Tests.csproj", "{882F179B-4E43-490A-8CB0-FE1D9478A6C1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Elementos de la solución", "Elementos de la solución", "{2BBC4A43-B67A-45EB-8E40-C976A9AB503B}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4345D59A-5BB2-4460-AF6D-52770DC20ECB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4345D59A-5BB2-4460-AF6D-52770DC20ECB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4345D59A-5BB2-4460-AF6D-52770DC20ECB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4345D59A-5BB2-4460-AF6D-52770DC20ECB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{882F179B-4E43-490A-8CB0-FE1D9478A6C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{882F179B-4E43-490A-8CB0-FE1D9478A6C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{882F179B-4E43-490A-8CB0-FE1D9478A6C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{882F179B-4E43-490A-8CB0-FE1D9478A6C1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {31B4BE0E-DD54-4E09-A9F3-813AAA81739D}
+	EndGlobalSection
+EndGlobal
