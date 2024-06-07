@@ -12,7 +12,7 @@ namespace Comics
             this.NumberPage = numberOfPages;
         }
 
-        public new double GiveTimeLoan()
+        public override double GiveTimeLoan()
         {
             return this.NumberPage * 0.3;
         }

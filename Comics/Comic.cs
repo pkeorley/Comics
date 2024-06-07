@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Comics
 {
-    public class Comic
+    public abstract class Comic
     {
         private int _numberOfPages;
 
@@ -30,9 +30,6 @@ namespace Comics
             }
         }
 
-        public double GiveTimeLoan()
-        {
-            return this.NumberPage * 0.5;
-        }
+        public abstract double GiveTimeLoan();
     }
 }
