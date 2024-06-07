@@ -19,8 +19,8 @@ namespace Comics.Tests
             IComic comic = new ClassicComic(-100);
 
             Assert.IsNotNull(comic);
-            Assert.AreEqual(comic.NumberOfPages, 1);
-            Assert.AreEqual(comic.GiveTimeLoan(), 0.5);
+            Assert.AreEqual(comic.NumberOfPages, 10);
+            Assert.AreEqual(comic.GiveTimeLoan(), 5);
         }
 
         [TestMethod]
@@ -39,8 +39,8 @@ namespace Comics.Tests
             IComic comic = new ModernComic(-100);
 
             Assert.IsNotNull(comic);
-            Assert.AreEqual(comic.NumberOfPages, 1);
-            Assert.AreEqual(comic.GiveTimeLoan(), 0.3);
+            Assert.AreEqual(comic.NumberOfPages, 20);
+            Assert.AreEqual(comic.GiveTimeLoan(), 6);
         }
 
         [TestMethod]
@@ -50,7 +50,7 @@ namespace Comics.Tests
 
             Assert.IsNotNull(comic);
             Assert.AreEqual(comic.NumberOfPages, 100);
-            Assert.AreEqual(comic.GiveTimeLoan(), 20);
+            Assert.AreEqual(comic.GiveTimeLoan(), 30);
         }
 
         [TestMethod]
@@ -59,8 +59,8 @@ namespace Comics.Tests
             IComic comic = new PopComic(-100); 
 
             Assert.IsNotNull(comic);
-            Assert.AreEqual(comic.NumberOfPages, 1);
-            Assert.AreEqual(comic.GiveTimeLoan(), 0.2);
+            Assert.AreEqual(comic.NumberOfPages, 5);
+            Assert.AreEqual(comic.GiveTimeLoan(), 1.5);
         }
     }
 }
