@@ -4,10 +4,14 @@
     {
         static void Main(string[] args)
         {
-            Comic comic = new Comic(10);
-            Console.WriteLine(comic.NumberPage);
+            Collection comics = new();
 
+            comics.Add(new Comic(50));
+            comics.Add(new ClassicComic(50));
+            comics.Add(new ModernComic(75));
+            comics.Add(new PopComic(25));
 
+            Console.WriteLine(comics.TotalNumberOfPages);
         }
     }
 }
