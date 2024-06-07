@@ -5,16 +5,33 @@ using System.Text;
 
 namespace Comics
 {
-    public class PopComic : Comic
+    public class PopComic : IComic
     {
-        public PopComic(int numberOfPages) : base(numberOfPages)
+        private int _numberOfPages;
+
+        public PopComic(int numberOfPages)
         {
-            this.NumberPage = numberOfPages;
+            NumberOfPages = numberOfPages;
         }
 
-        public override double GiveTimeLoan()
+        public int NumberOfPages
         {
-            return this.NumberPage * 0.2;
+            get => _numberOfPages;
+            set
+            {
+                if (value < 5)
+                {
+                    _numberOfPages = 5;
+                    return;
+                }
+
+                _numberOfPages = value;
+            }
+        }
+
+        public double GiveTimeLoan()
+        {
+            return NumberOfPages * 0.3;
         }
 
     }

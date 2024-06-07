@@ -4,10 +4,8 @@
     {
         static void Main(string[] args)
         {
-            Comic comic = new Comic(10);
-            Console.WriteLine(comic.NumberPage);
-
-
+            IComic comic = new ClassicComic(10);
+            Console.WriteLine(comic.GiveTimeLoan());
         }
     }
 }

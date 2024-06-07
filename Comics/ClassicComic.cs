@@ -5,16 +5,32 @@ using System.Text;
 
 namespace Comics
 {
-    public class ClassicComic : Comic
+    public class ClassicComic : IComic
     {
-        public ClassicComic(int numberOfPages) : base(numberOfPages)
+        private int _numberOfPages;
+
+        public ClassicComic(int numberOfPages)
         {
-            this.NumberPage = numberOfPages;
+            NumberOfPages = numberOfPages;
         }
 
-        public override double GiveTimeLoan()
+        public int NumberOfPages {
+            get => _numberOfPages;
+            set
+            {
+                if (value < 10)
+                {
+                    _numberOfPages = 10;
+                    return;
+                }
+                
+                _numberOfPages = value;
+            }
+        }
+
+        public double GiveTimeLoan()
         {
-            return this.NumberPage * 0.5;
+            return NumberOfPages * 0.5;
         }
     }
 }
