@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Comics
+namespace Comics.ComicsImplementation
 {
-    public class PopComic : IComic
+    public class ClassicComic : IComic
     {
         private int _numberOfPages;
 
-        public PopComic(int numberOfPages)
+        public ClassicComic(int numberOfPages)
         {
             NumberOfPages = numberOfPages;
         }
@@ -19,9 +19,9 @@ namespace Comics
             get => _numberOfPages;
             set
             {
-                if (value < 5)
+                if (value < 10)
                 {
-                    _numberOfPages = 5;
+                    _numberOfPages = 10;
                     return;
                 }
 
@@ -31,8 +31,7 @@ namespace Comics
 
         public double GiveTimeLoan()
         {
-            return NumberOfPages * 0.3;
+            return NumberOfPages * 0.5;
         }
-
     }
 }

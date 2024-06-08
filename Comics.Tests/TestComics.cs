@@ -64,5 +64,40 @@ namespace Comics.Tests
             Assert.AreEqual(comic.NumberOfPages, 5);
             Assert.AreEqual(comic.GiveTimeLoan(), 1.5);
         }
+
+        [TestMethod]
+        public void TestWellCollectionCreation()
+        {
+            Collection collection = new();
+            Assert.IsNotNull(collection);
+
+            collection.Add(new ClassicComic(20));
+            Assert.AreEqual(collection.TotalNumberOfPages, 20);
+
+            collection.Add(new ModernComic(30));
+            Assert.AreEqual(collection.TotalNumberOfPages, 50);
+
+            collection.Add(new PopComic(70));
+            Assert.AreEqual(collection.TotalNumberOfPages, 120);
+        }
+
+        [TestMethod]
+        public void TestBadCollectionCreation()
+        {
+            Collection collection = new();
+            Assert.IsNotNull(collection);
+
+            collection.Add(new ClassicComic(-100));
+            Assert.AreEqual(collection.TotalNumberOfPages, 10);
+
+            collection.Add(new ModernComic(30));
+            Assert.AreEqual(collection.TotalNumberOfPages, 40);
+
+            collection.Add(new ModernComic(-30));
+            Assert.AreEqual(collection.TotalNumberOfPages, 60);
+
+            collection.Add(new PopComic(-25));
+            Assert.AreEqual(collection.TotalNumberOfPages, 65);
+        }
     }
 }
