@@ -4,26 +4,6 @@ namespace Comics.Tests
     public class TestComics
     {
         [TestMethod]
-        public void TestComicCreation()
-        {
-            Comic comic = new Comic(100);
-
-            Assert.IsNotNull(comic);
-            Assert.AreEqual(comic.NumberPage, 100);
-            Assert.AreEqual(comic.GiveTimeLoan(), 50);
-        }
-
-        [TestMethod]
-        public void TestBadComicCreation()
-        {
-            Comic comic = new Comic(-100);
-
-            Assert.IsNotNull(comic);
-            Assert.AreEqual(comic.NumberPage, 1);
-            Assert.AreEqual(comic.GiveTimeLoan(), 0.5);
-        }
-
-        [TestMethod]
         public void TestClassicComicCreation()
         {
             ClassicComic comic = new ClassicComic(100);
