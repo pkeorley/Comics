@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Comics
+namespace Comics.Interfaces
 {
-    public interface ICollectionable
+    public interface IPaginable
     {
+        int NumberOfPages { get; }
     }
 }

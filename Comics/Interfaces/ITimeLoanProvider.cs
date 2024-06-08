@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Comics
+namespace Comics.Interfaces
 {
-    public interface IPaginable
+    public interface ITimeLoanProvider
     {
-        int NumberOfPages { get; }
+        double GiveTimeLoan();
     }
 }

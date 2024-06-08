@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Comics
+namespace Comics.Interfaces
 {
-    public interface ITimeLoanProvider
+    public interface ICollectionable
     {
-        double GiveTimeLoan();
     }
 }
