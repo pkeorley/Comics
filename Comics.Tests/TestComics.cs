@@ -6,7 +6,7 @@ namespace Comics.Tests
     public class TestComics
     {
         [TestMethod]
-        public void TestClassicComicCreation()
+        public void TestWellClassicComicCreation()
         {
             IComic comic = new ClassicComic(100);
 
@@ -26,7 +26,7 @@ namespace Comics.Tests
         }
 
         [TestMethod]
-        public void TestModernComicCreation()
+        public void TestWellModernComicCreation()
         {
             IComic comic = new ModernComic(100);
 
@@ -46,7 +46,7 @@ namespace Comics.Tests
         }
 
         [TestMethod]
-        public void TestPopComicCreation()
+        public void TestWellPopComicCreation()
         {
             IComic comic = new PopComic(100);
 
@@ -56,7 +56,7 @@ namespace Comics.Tests
         }
 
         [TestMethod]
-        public void TestPopClassicComicCreation()
+        public void TestBadPopComicCreation()
         {
             IComic comic = new PopComic(-100); 
 
