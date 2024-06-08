@@ -1,3 +1,5 @@
+using Comics.ComicsImplementation;
+
 namespace Comics.Tests
 {
     [TestClass]
